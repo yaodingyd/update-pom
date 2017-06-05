@@ -30,9 +30,9 @@ function writeVersion(txt, version) {
     if (err) throw err;
     var newValue = '';
     if (txt === 'node') {
-     newValue = data.replace(/<nodeVersion>[\w.]+<\/nodeVersion>/gim, `<nodeVersion>${version}<\/nodeVersion>`);
+     newValue = data.replace(/<nodeVersion>v.+<\/nodeVersion>/gim, `<nodeVersion>v${version}<\/nodeVersion>`);
     } else {
-     newValue = data.replace(/<yarnVersion>[\w.]+<\/yarnVersion>/gim, `<yarnVersion>${version}<\/yarnVersion>`);
+     newValue = data.replace(/<yarnVersion>v.+<\/yarnVersion>/gim, `<yarnVersion>v${version}<\/yarnVersion>`);
     }
 
     fs.writeFile('pom.xml', newValue, 'utf-8', function (err) {
