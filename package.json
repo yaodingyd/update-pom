@@ -1,0 +1,11 @@
+{
+  "name": "update-pom",
+  "version": "0.0.1",
+  "description": "update node and yarn version to latest in your POM file",
+  "main": "index.js",
+  "author": "yding",
+  "license": "MIT",
+  "bin": {
+    "update-pom": "bin/main.js"
+  }
+}
