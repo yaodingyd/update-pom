@@ -1,6 +1,6 @@
 {
   "name": "update-pom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "update node and yarn version to latest in your POM file",
   "main": "index.js",
   "author": "yding",
